@@ -1,0 +1,340 @@
+{
+	"id": "35706472b1935944f929f77622189bfa",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/interfaces/ILOVELYTokenList.sol": {
+				"content": "// SPDX-License-Identifier: UNLICENSED\n\npragma solidity =0.8.15;\n\n/**\n    An interface to represent the LOVELY DEX token listing.\n\n    Used in:\n    - LOVELYFactory;\n    - LOVELYCompetition.\n */\ninterface ILOVELYTokenList {\n\n    /**\n        Returns, whether the given token is validated in the DEX.\n        The token is validated when the validation amount in the given token is paid.\n\n        @param _token The token to be checked.\n\n\t\t@return Whether the given token is validated in the DEX.\n\t */\n    function validated(address _token) external view returns (bool);\n\n    function defaultValidationToken() external view returns (address);\n}\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/interfaces/ILOVELYTokenList.sol": {
+				"ILOVELYTokenList": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "defaultValidationToken",
+							"outputs": [
+								{
+									"internalType": "address",
+									"name": "",
+									"type": "address"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "_token",
+									"type": "address"
+								}
+							],
+							"name": "validated",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"validated(address)": {
+								"params": {
+									"_token": "The token to be checked."
+								},
+								"returns": {
+									"_0": "Whether the given token is validated in the DEX."
+								}
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"defaultValidationToken()": "a945ec52",
+							"validated(address)": "f8e47cd6"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"defaultValidationToken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"}],\"name\":\"validated\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"validated(address)\":{\"params\":{\"_token\":\"The token to be checked.\"},\"returns\":{\"_0\":\"Whether the given token is validated in the DEX.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"validated(address)\":{\"notice\":\"Returns, whether the given token is validated in the DEX. The token is validated when the validation amount in the given token is paid.\"}},\"notice\":\"An interface to represent the LOVELY DEX token listing. Used in: - LOVELYFactory; - LOVELYCompetition.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/ILOVELYTokenList.sol\":\"ILOVELYTokenList\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/ILOVELYTokenList.sol\":{\"keccak256\":\"0xee3bc951cf57d0fafcf55c4d3ee603e41dd40a79d24b5dd68831ed14cb214a96\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://d80838f13acfbff822918007d07a22c0baa0d6503505e500c428dcfdbe2e889d\",\"dweb:/ipfs/QmNy4x15cCzvDqUHjmuBmxPJn3mD1JLm7AaFZHwZDKJMwF\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"validated(address)": {
+								"notice": "Returns, whether the given token is validated in the DEX. The token is validated when the validation amount in the given token is paid."
+							}
+						},
+						"notice": "An interface to represent the LOVELY DEX token listing. Used in: - LOVELYFactory; - LOVELYCompetition.",
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/interfaces/ILOVELYTokenList.sol": {
+				"ast": {
+					"absolutePath": "contracts/interfaces/ILOVELYTokenList.sol",
+					"exportedSymbols": {
+						"ILOVELYTokenList": [
+							16
+						]
+					},
+					"id": 17,
+					"license": "UNLICENSED",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"=",
+								"0.8",
+								".15"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "40:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "ILOVELYTokenList",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "66:127:0",
+								"text": "An interface to represent the LOVELY DEX token listing.\nUsed in:\n- LOVELYFactory;\n- LOVELYCompetition."
+							},
+							"fullyImplemented": false,
+							"id": 16,
+							"linearizedBaseContracts": [
+								16
+							],
+							"name": "ILOVELYTokenList",
+							"nameLocation": "204:16:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 3,
+										"nodeType": "StructuredDocumentation",
+										"src": "228:268:0",
+										"text": "Returns, whether the given token is validated in the DEX.\nThe token is validated when the validation amount in the given token is paid.\n@param _token The token to be checked.\n@return Whether the given token is validated in the DEX."
+									},
+									"functionSelector": "f8e47cd6",
+									"id": 10,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "validated",
+									"nameLocation": "510:9:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 6,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 5,
+												"mutability": "mutable",
+												"name": "_token",
+												"nameLocation": "528:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 10,
+												"src": "520:14:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "520:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "519:16:0"
+									},
+									"returnParameters": {
+										"id": 9,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 8,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 10,
+												"src": "559:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 7,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "559:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "558:6:0"
+									},
+									"scope": 16,
+									"src": "501:64:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "a945ec52",
+									"id": 15,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "defaultValidationToken",
+									"nameLocation": "580:22:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 11,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "602:2:0"
+									},
+									"returnParameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 13,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "628:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 12,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "628:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "627:9:0"
+									},
+									"scope": 16,
+									"src": "571:66:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 17,
+							"src": "194:445:0",
+							"usedErrors": []
+						}
+					],
+					"src": "40:600:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

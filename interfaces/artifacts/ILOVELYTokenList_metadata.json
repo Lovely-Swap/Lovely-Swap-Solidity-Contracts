@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "defaultValidationToken",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"name": "validated",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"validated(address)": {
+					"params": {
+						"_token": "The token to be checked."
+					},
+					"returns": {
+						"_0": "Whether the given token is validated in the DEX."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"validated(address)": {
+					"notice": "Returns, whether the given token is validated in the DEX. The token is validated when the validation amount in the given token is paid."
+				}
+			},
+			"notice": "An interface to represent the LOVELY DEX token listing. Used in: - LOVELYFactory; - LOVELYCompetition.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/ILOVELYTokenList.sol": "ILOVELYTokenList"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/ILOVELYTokenList.sol": {
+			"keccak256": "0xee3bc951cf57d0fafcf55c4d3ee603e41dd40a79d24b5dd68831ed14cb214a96",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://d80838f13acfbff822918007d07a22c0baa0d6503505e500c428dcfdbe2e889d",
+				"dweb:/ipfs/QmNy4x15cCzvDqUHjmuBmxPJn3mD1JLm7AaFZHwZDKJMwF"
+			]
+		}
+	},
+	"version": 1
+}

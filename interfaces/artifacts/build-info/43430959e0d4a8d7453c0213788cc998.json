@@ -1,0 +1,300 @@
+{
+	"id": "43430959e0d4a8d7453c0213788cc998",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/interfaces/ILOVELYAddressFilter.sol": {
+				"content": "// SPDX-License-Identifier: UNLICENSED\n\npragma solidity =0.8.15;\n\n/**\n    An interface for entities, capable to filter a list of matching\n    addresses.\n */\ninterface ILOVELYAddressFilter {\n\n    /**\n        For a given address, returns, whether it should be included.\n\n        @param _identifier The identifier for making a projection within the data source context.\n        @param _address The address to be checked.\n     */\n    function included(uint256 _identifier, address _address) external view returns (bool);\n}\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/interfaces/ILOVELYAddressFilter.sol": {
+				"ILOVELYAddressFilter": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "uint256",
+									"name": "_identifier",
+									"type": "uint256"
+								},
+								{
+									"internalType": "address",
+									"name": "_address",
+									"type": "address"
+								}
+							],
+							"name": "included",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"included(uint256,address)": {
+								"params": {
+									"_address": "The address to be checked.",
+									"_identifier": "The identifier for making a projection within the data source context."
+								}
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"included(uint256,address)": "2b097caf"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_identifier\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"included\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"included(uint256,address)\":{\"params\":{\"_address\":\"The address to be checked.\",\"_identifier\":\"The identifier for making a projection within the data source context.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"included(uint256,address)\":{\"notice\":\"For a given address, returns, whether it should be included.\"}},\"notice\":\"An interface for entities, capable to filter a list of matching addresses.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/ILOVELYAddressFilter.sol\":\"ILOVELYAddressFilter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/ILOVELYAddressFilter.sol\":{\"keccak256\":\"0x2e3d0729e7ae32e0ff8098b27c68806ac355310f42e3223e8a19fac78084b969\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://ac7580b00dfee07c0e27da46363918cd5e170d13c9cc44d73c8956c3da43b0f4\",\"dweb:/ipfs/QmfLczqfqP6qouZhVRy2cH5RWzw4Kjg5PX4tsHy8tJAL8i\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"included(uint256,address)": {
+								"notice": "For a given address, returns, whether it should be included."
+							}
+						},
+						"notice": "An interface for entities, capable to filter a list of matching addresses.",
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/interfaces/ILOVELYAddressFilter.sol": {
+				"ast": {
+					"absolutePath": "contracts/interfaces/ILOVELYAddressFilter.sol",
+					"exportedSymbols": {
+						"ILOVELYAddressFilter": [
+							13
+						]
+					},
+					"id": 14,
+					"license": "UNLICENSED",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"=",
+								"0.8",
+								".15"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "40:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "ILOVELYAddressFilter",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "66:90:0",
+								"text": "An interface for entities, capable to filter a list of matching\naddresses."
+							},
+							"fullyImplemented": false,
+							"id": 13,
+							"linearizedBaseContracts": [
+								13
+							],
+							"name": "ILOVELYAddressFilter",
+							"nameLocation": "167:20:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 3,
+										"nodeType": "StructuredDocumentation",
+										"src": "195:230:0",
+										"text": "For a given address, returns, whether it should be included.\n@param _identifier The identifier for making a projection within the data source context.\n@param _address The address to be checked."
+									},
+									"functionSelector": "2b097caf",
+									"id": 12,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "included",
+									"nameLocation": "439:8:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 5,
+												"mutability": "mutable",
+												"name": "_identifier",
+												"nameLocation": "456:11:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "448:19:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "448:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 7,
+												"mutability": "mutable",
+												"name": "_address",
+												"nameLocation": "477:8:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "469:16:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "469:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "447:39:0"
+									},
+									"returnParameters": {
+										"id": 11,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 10,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 12,
+												"src": "510:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 9,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "510:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "509:6:0"
+									},
+									"scope": 13,
+									"src": "430:86:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 14,
+							"src": "157:361:0",
+							"usedErrors": []
+						}
+					],
+					"src": "40:479:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
