@@ -184,7 +184,7 @@ abstract contract LovelyswapV2Pair is ILovelyswapV2Pair, LovelyswapV2ERC20 {
             // optimistically transfer tokens
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out);
             // optimistically transfer tokens
-            if (data.length > 0) ILovelyswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
+            if (data.length > 0) ILovelyswapV2Callee(to).LovelyswapV2Call(msg.sender, amount0Out, amount1Out, data);
             balance0 = IERC20(_token0).balanceOf(address(this));
             balance1 = IERC20(_token1).balanceOf(address(this));
         }
